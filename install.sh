@@ -1,5 +1,4 @@
-apt install neovim-nightly -y
-apt install mc nodejs clang -y
+pkg install neovim-nightly mc nodejs clang -y
 npm i -g vscode-langservers-extracted
 npm install -g emmet-ls
 npm insatll -g live-server
