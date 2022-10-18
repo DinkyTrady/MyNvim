@@ -1,2 +1,2 @@
-How Install it?
-→  brew install.sh
+# How Install it?
+→  ```brew install.sh```
