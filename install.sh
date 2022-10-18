@@ -1,4 +1,4 @@
-apt install mc nodejs neovim-nigthly clang -y
+apt install mc nodejs neovim clang -y
 npm i -g vscode-langservers-extracted
 npm install -g emmet-ls
 npm insatll -g live-server
