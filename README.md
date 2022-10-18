@@ -3,5 +3,5 @@
 ```git 
 git clone https://github.com/DinkyTrady/MyNvimSUp && cd My-Neovim-Setup && bash install.sh
 ```
-#For more details
+# For more details
 [Wiki](https://github.com/DinkyTrady/MyNvimSUp/wiki)
