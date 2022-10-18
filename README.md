@@ -9,4 +9,4 @@ You can visit this website [nerdfont](https://www.nerdfonts.com/font-downloads) 
 the one you like😉
 ### If you use termux
 After you install the fonts you should rename font file to font.ttf
-and move to **.termux**
+and move to directory **.termux**
