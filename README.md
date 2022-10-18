@@ -1,9 +1,16 @@
+# Information
+[Wiki](https://github.com/DinkyTrady/MyNvimSUp/wiki).
+>This is only for termux user❗
 # How Install it?
 ### ⚠️ Requirements
-- [git](https://github.com/git-guides/install-git)
-## Do this in your terminal 
-```git 
-git clone https://github.com/DinkyTrady/MyNvimSUp && cd MyNvimSUp && bash install.sh
+```setup
+termux-setup-storage
 ```
-# For more details
-[Wiki](https://github.com/DinkyTrady/MyNvimSUp/wiki)
+- [git](https://github.com/git-guides/install-git)
+## Do this in your terminal
+```pkg
+pkg install git
+```
+```git 
+git clone https://github.com/DinkyTrady/MyNvim && cd MyNvim && bash install.sh
+```
