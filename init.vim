@@ -1,11 +1,5 @@
 "To install plugin use `:PlugInstall`
 "Untuk menginstall plugin ketik `:PlugInstall`
-"Setting
-set termguicolors
-set number
-set expandtab
-set tabstop=2
-set shiftwidth=2
 "Call plugins
 call plug#begin()
   Plug 'neovim/nvim-lspconfig'
