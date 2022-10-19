@@ -17,5 +17,5 @@ pkg install git
 ```
 ## Do this in your terminal
 ```git 
-git clone https://github.com/DinkyTrady/MyNvim && cd MyNvim && bash install.sh
+git clone https://github.com/DinkyTrady/MyNvim ~/.config/nvim --depth 1 && bash install.sh
 ```
