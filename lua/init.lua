@@ -1,5 +1,5 @@
 require('randy.cmp')
-require('randy.lspconfig')
+require('randy.lsp')
 require('set.nvim-tree')
 require('set.line')
 require('set.cs')
