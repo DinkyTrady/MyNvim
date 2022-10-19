@@ -1,3 +1,5 @@
+"To install plugin use `:PlugInstall`
+"Untuk menginstall plugin ketik `:PlugInstall`
 set encoding=utf8
 set cursorline
 set noshowmode
