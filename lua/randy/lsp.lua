@@ -1,6 +1,6 @@
 -- Setup lspconfig.
 local nvim_lsp = require('lspconfig')
-local server = { 'tsserver', 'html', 'cssls', 'emmet_ls', 'clangd' }
+local server = { 'tsserver', 'html', 'cssls', 'emmet_ls', }
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _,lsp in ipairs(server) do
