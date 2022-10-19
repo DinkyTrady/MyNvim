@@ -1,5 +1,5 @@
 # Information
-[Wiki](https://github.com/DinkyTrady/MyNvimSUp/wiki).
+For detail information [Wiki](https://github.com/DinkyTrady/MyNvimSUp/wiki).
 >This is only for termux user❗
 # How Install it?
 ### ⚠️ Requirements
