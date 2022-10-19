@@ -3,6 +3,7 @@ require('randy.lsp')
 require('set.nvim-tree')
 require('set.line')
 require('set.cs')
+require('set.key')
 --indent-blankline
 vim.opt.list = true
 vim.opt.listchars:append "eol:↴"
