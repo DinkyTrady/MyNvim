@@ -5,8 +5,9 @@ require('set.line')
 require('set.cs')
 require('set.key')
 --indent-blankline
-vim.opt.list = true
-vim.opt.listchars:append "eol:↴"
+let l = vim.opt.list
+l = true
+lchars:append "eol:↴"
 
 require("indent_blankline").setup {
     show_end_of_line = true,
