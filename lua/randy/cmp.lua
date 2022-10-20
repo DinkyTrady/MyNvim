@@ -6,7 +6,6 @@
   local cmp = require'cmp'
   local luasnip = require'luasnip'
   local lspkind = require('lspkind')
-  require("bufferline").setup{}
   cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
