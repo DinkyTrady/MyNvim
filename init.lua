@@ -1,7 +1,6 @@
 --To install plugin use `:PlugInstall`
-local c = vim.call
 local Plug = vim.fn['plug#']
-c('plug#begin', '~/.config/nvim/plugged')
+vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
@@ -21,10 +20,9 @@ c('plug#begin', '~/.config/nvim/plugged')
   Plug 'nvim-lualine/lualine.nvim'
   Plug('folke/tokyonight.nvim', { branch = 'main' })
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
-c('plug#end')
+vim.call('plug#end')
 --Colorscheme
-local d = vim.cmd
-d[[
+vim.cmd[[
   syntax enable
   colorscheme tokyonight-night
 ]]
