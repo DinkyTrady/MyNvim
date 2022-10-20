@@ -4,7 +4,7 @@ require('Plugins.nvim-tree')
 require('Plugins.lualine')
 require('Plugins.tokyonight')
 require('Plugins.blankline')
-require('Plugin.bufferline')
+require('Plugins.bufferline')
 --snip
 require("luasnip.loaders.from_vscode").lazy_load()
 --autocomments
