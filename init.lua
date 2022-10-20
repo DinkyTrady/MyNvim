@@ -29,6 +29,5 @@ d[[
   colorscheme tokyonight-night
 ]]
 --require
-local r = require
-r('init')
-r('key')
+require('plug-setup')
+require('key')
