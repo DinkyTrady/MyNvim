@@ -1,4 +1,5 @@
 --To install plugin use `:PlugInstall`
+--To activated lsp/cmp please click CTRL - m or save the file with :w
 local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'neovim/nvim-lspconfig'
