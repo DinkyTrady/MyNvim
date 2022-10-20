@@ -20,6 +20,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'nvim-lualine/lualine.nvim'
   Plug('folke/tokyonight.nvim', { branch = 'main' })
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
+  Plug 'williamboman/mason.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
 vim.call('plug#end')
 --Colorscheme
 vim.cmd[[
