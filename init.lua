@@ -1,7 +1,9 @@
-"To install plugin use `:PlugInstall`
-"Untuk menginstall plugin ketik `:PlugInstall`
-"Call plugins
-call plug#begin()
+--"To install plugin use `:PlugInstall`
+--"Untuk menginstall plugin ketik `:PlugInstall`
+--"Call plugins
+local c = vim.call
+local Plug = vim.fn['plug#']
+c('plug#begin', '~/.config/nvim/plugged')
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
@@ -15,16 +17,15 @@ call plug#begin()
   Plug 'numToStr/Comment.nvim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+  Plug('akinsho/bufferline.nvim', { 'tag'= 'v2.*' })
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'nvim-lualine/lualine.nvim'
-  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-call plug#end
+  Plug('folke/tokyonight.nvim', { 'branch'= 'main' })
+  Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
+c('plug#end')
 "Colorscheme
-colorscheme tokyonight-night
-lua <<EOF
-  require('init')
-  require('key')
-EOF
+vim.cmd('colorscheme tokyonight-night')
+--require
+require('init')
+require('key')
