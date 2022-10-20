@@ -7,3 +7,4 @@ o.shiftwidth = 0
 o.number = true
 o.relativenumber = true
 o.termguicolors = true
+o.cursorline = true
