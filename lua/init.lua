@@ -5,14 +5,15 @@ require('set.line')
 require('set.cs')
 require('set.key')
 --indent-blankline
-let l = vim.opt.list
-l = true
-lchars:append "eol:↴"
+vim.opt.list = true
+vim.opt.listchars:append "eol:↴"
 
 require("indent_blankline").setup {
     show_end_of_line = true,
 }
---snipr
+--bufferline
+require ("bufferline").setup{}
+--snip
 require("luasnip.loaders.from_vscode").lazy_load()
 --autocomments
 require('Comment').setup()
