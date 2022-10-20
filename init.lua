@@ -1,7 +1,7 @@
 --To install plugin use `:PlugInstall`
 local c = vim.call
 local Plug = vim.fn['plug#']
-c('plug#begin', '~/.config/nvim/plugged')
+c('plug#begin', '~/.config/nvim/vim-plug/plugged')
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
