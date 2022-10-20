@@ -30,3 +30,4 @@ d[[
 ]]
 --require
 require('plug-setup')
+require('key')
