@@ -5,4 +5,5 @@ o.encoding = "utf-8"
 o.expandtab = true
 o.shiftwidth = 0
 o.number = true
+o.relativenumber = true
 o.termguicolors = true
