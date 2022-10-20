@@ -5,6 +5,7 @@ require('Plugins.lualine')
 require('Plugins.tokyonight')
 require('Plugins.blankline')
 require('Plugins.bufferline')
+require('Plugins.mason')
 --snip
 require("luasnip.loaders.from_vscode").lazy_load()
 --autocomments
