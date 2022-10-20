@@ -1,6 +1,4 @@
---"To install plugin use `:PlugInstall`
---"Untuk menginstall plugin ketik `:PlugInstall`
---"Call plugins
+--To install plugin use `:PlugInstall`
 local c = vim.call
 local Plug = vim.fn['plug#']
 c('plug#begin', '~/.config/nvim/plugged')
@@ -17,15 +15,20 @@ c('plug#begin', '~/.config/nvim/plugged')
   Plug 'numToStr/Comment.nvim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug('akinsho/bufferline.nvim', { 'tag'= 'v2.*' })
+  Plug('akinsho/bufferline.nvim', {  tag = 'v3.*' })
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'nvim-lualine/lualine.nvim'
-  Plug('folke/tokyonight.nvim', { 'branch'= 'main' })
+  Plug('folke/tokyonight.nvim', { branch = 'main' })
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
 c('plug#end')
-"Colorscheme
-vim.cmd('colorscheme tokyonight-night')
+--Colorscheme
+local d = vim.cmd
+d[[
+  syntax enable
+  colorscheme tokyonight-night
+]]
 --require
-require('init')
-require('key')
+local r = require
+r('init')
+r('key')
