@@ -22,6 +22,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
   Plug 'williamboman/mason.nvim'
   Plug 'williamboman/mason-lspconfig.nvim'
+  Plug 'Pocco81/auto-save.nvim'
 vim.call('plug#end')
 --require
 require('plug-setup')
