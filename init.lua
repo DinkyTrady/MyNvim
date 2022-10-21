@@ -1,8 +1,12 @@
 --install use `:PlugInstall`
 local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
+  --LSP / language server protocol
   Plug 'neovim/nvim-lspconfig'
+  Plug 'williamboman/mason.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
   Plug 'hrsh7th/cmp-nvim-lsp'
+  --CMP
   Plug 'hrsh7th/cmp-buffer'
   Plug 'hrsh7th/cmp-path'
   Plug 'hrsh7th/cmp-cmdline'
@@ -11,18 +15,19 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'saadparwaiz1/cmp_luasnip'
   Plug 'rafamadriz/friendly-snippets'
   Plug 'onsails/lspkind-nvim'
+  --Make your neovim better experience
   Plug 'numToStr/Comment.nvim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
+  --ui
   Plug('akinsho/bufferline.nvim', {  tag = 'v3.*' })
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'nvim-lualine/lualine.nvim'
-  Plug('folke/tokyonight.nvim', { branch = 'main' })
+  -Syntax highlighting
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
-  Plug 'williamboman/mason.nvim'
-  Plug 'williamboman/mason-lspconfig.nvim'
-  Plug 'Pocco81/auto-save.nvim'
+  --colorscheme
+  Plug('folke/tokyonight.nvim', { branch = 'main' })
 vim.call('plug#end')
 --require
 require('plug-setup')
