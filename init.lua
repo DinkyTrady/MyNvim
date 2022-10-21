@@ -15,7 +15,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'saadparwaiz1/cmp_luasnip'
   Plug 'rafamadriz/friendly-snippets'
   Plug 'onsails/lspkind-nvim'
-  --Make your neovim better experience
+  --Make your experience better
   Plug 'numToStr/Comment.nvim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
