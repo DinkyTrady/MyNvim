@@ -1,5 +1,7 @@
---options
+--variable
 local o = vim.opt
+local g = vim.g
+--options & nonactive default neovim
 o.softtabstop = 2
 o.tabstop = 2
 o.encoding = "utf-8"
@@ -8,6 +10,38 @@ o.shiftwidth = 0
 o.number = true
 o.termguicolors = true
 o.cursorline = true
+--nonactivated
+local default_plugins = {
+  "2html_plugin",
+  "getscript",
+  "getscriptPlugin",
+  "gzip",
+  "logipat",
+  "netrw",
+  "netrwPlugin",
+  "netrwSettings",
+  "netrwFileHandlers",
+  "matchit",
+  "tar",
+  "tarPlugin",
+  "rrhelper",
+  "spellfile_plugin",
+  "vimball",
+  "vimballPlugin",
+  "zip",
+  "zipPlugin",
+  "tutor",
+  "rplugin",
+  "syntax",
+  "synmenu",
+  "optwin",
+  "compiler",
+  "bugreport",
+  "ftplugin",
+}
+for _, plugin in pairs(default_plugins) do
+  g["loaded_" .. plugin] = 1
+end
 --mappings
 --change <leader> to 'space'. Please do not make mappings with <leader> in insert mode
 vim.g.mapleader = " "
