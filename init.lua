@@ -24,7 +24,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'nvim-lualine/lualine.nvim'
-  -Syntax highlighting
+  --Syntax highlighting
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
   --colorscheme
   Plug('folke/tokyonight.nvim', { branch = 'main' })
