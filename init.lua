@@ -23,11 +23,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'williamboman/mason.nvim'
   Plug 'williamboman/mason-lspconfig.nvim'
 vim.call('plug#end')
---Colorscheme
-vim.cmd[[
-  syntax enable
-  colorscheme tokyonight-night
-]]
 --require
 require('plug-setup')
 require('key')
