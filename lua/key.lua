@@ -13,10 +13,11 @@ o.cursorline = true
 vim.g.mapleader = " "
 vim.g.maplocalheader = " "
 --set mapping
+local map = vim.keymap.set
 --open nvim-tree with 'space + n'
-map('n', '<leader>n', 'NvimTreeToggle<CR>')
---For save click 'space + w', save and quit click 'wq', quit neovim click 'space + q', to force quit click 'fq' in normal mode
-map('n', '<leader>n', ':w<CR>')
+map('n', '<leader>n', ':NvimTreeToggle<CR>')
+--For save click 'space + z', save and quit click 'wq', quit neovim click 'space + q', to force quit click 'fq' in normal mode
+map('n', '<leader>z', ':w<CR>')
 map('n', 'wq', ':wq<CR>')
 map('n', '<leader>q', ':q<CR>')
 map('n', 'fq', ':q!<CR>')
