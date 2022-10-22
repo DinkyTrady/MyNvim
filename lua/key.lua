@@ -1,8 +1,9 @@
---variable
+---------variable
 local o = vim.opt
 local g = vim.g
 
---options
+---------Options
+
 o.softtabstop = 2
 o.tabstop = 2
 o.encoding = "utf-8"
@@ -86,10 +87,6 @@ map('n', '<leader>s', ':so<CR>')
 
 ---------To another tab
 
---only bufferlines
-map('n', '<C-Right>', ':BufferLineCycleNext')
-map('n', '<C-Left>', ':BufferLineCycleLeft')
-
---Default tab
-map('n', '<leader>Right', ':tabnext')
-map('n', '<leader>Left', ':tableft')
+--Bufferlines
+map('n', '<C-Right>', ':BufferLineCycleNext<CR>')
+map('n', '<C-Left>', ':BufferLineCyclePrev<CR>')
