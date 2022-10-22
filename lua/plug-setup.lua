@@ -1,14 +1,11 @@
-require('Plugins.cmp')
-require('Plugins.lsp')
-require('Plugins.nvim-tree')
-require('Plugins.lualine')
-require('Plugins.tokyonight')
-require('Plugins.blankline')
-require('Plugins.bufferline')
-require('Plugins.mason')
---snip
-require("luasnip.loaders.from_vscode").lazy_load()
---autocomments
-require('Comment').setup()
---nvim-treesitter-setup↴
-require'nvim-treesitter.configs'.setup{highlight={enable=true}}
+local r = require
+r('Plugins.cmp')
+r('Plugins.lsp')
+r('Plugins.nvim-tree')
+r('Plugins.lualine')
+r('Plugins.tokyonight')
+r('Plugins.blankline')
+r('Plugins.bufferline')
+r('Plugins.mason')
+r('Plugins.comment')
+r('Plugins.treesitter')
