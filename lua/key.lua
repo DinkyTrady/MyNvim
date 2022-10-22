@@ -1,16 +1,36 @@
 --variable
 local o = vim.opt
 local g = vim.g
---options & nonactive default neovim
+
+--options
 o.softtabstop = 2
 o.tabstop = 2
 o.encoding = "utf-8"
 o.expandtab = true
-o.shiftwidth = 0
+o.shiftwidth = 2
 o.number = true
 o.termguicolors = true
 o.cursorline = true
---nonactivated
+o.laststatus = 3
+o.showmode = false
+o.title = true
+o.clipboard = "unnamedplus"
+o.smartindent = true
+o.fillchars = { eob = " " }
+o.ignorecase = true
+o.smartcase = true
+o.mouse = "a"
+o.numberwidth = 2
+o.ruler = false
+o.shortmess:append "sI"
+o.signcolumn = "yes"
+o.splitbelow = true
+o.splitright = true
+o.timeoutlen = 400
+o.updatetime = 250
+o.whichwrap:append "<>[]hl"
+
+--Disable defaults neovim plugins
 local default_plugins = {
   "2html_plugin",
   "getscript",
@@ -42,18 +62,34 @@ local default_plugins = {
 for _, plugin in pairs(default_plugins) do
   g["loaded_" .. plugin] = 1
 end
---mappings
+
+---------mappings
+
 --change <leader> to 'space'. Please do not make mappings with <leader> in insert mode
 vim.g.mapleader = " "
 vim.g.maplocalheader = " "
+
 --set mapping
 local map = vim.keymap.set
---open nvim-tree with 'space + n'
-map('n', '<leader>n', ':NvimTreeToggle<CR>')
+
+--open nvim-tree with 'space + t'
+map('n', '<leader>t', ':NvimTreeToggle<CR>')
+
 --For save click 'space + z', save and quit click 'wq', quit neovim click 'space + q', to force quit click 'fq' in normal mode
 map('n', '<leader>z', ':w<CR>')
 map('n', 'wq', ':wq<CR>')
 map('n', '<leader>q', ':q<CR>')
 map('n', 'fq', ':q!<CR>')
+
 --to reset neovim click 'space + s'
 map('n', '<leader>s', ':so<CR>')
+
+---------To another tab
+
+--only bufferlines
+map('n', '<C-Right>', ':BufferLineCycleNext')
+map('n', '<C-Left>', ':BufferLineCycleLeft')
+
+--Default tab
+map('n', '<leader>Right', ':tabnext')
+map('n', '<leader>Left', ':tableft')
