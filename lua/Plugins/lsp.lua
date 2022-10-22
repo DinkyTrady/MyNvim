@@ -2,7 +2,7 @@
 local mason = require("mason-lspconfig")
 mason.setup({
   ensure_installed = { 'sumneko_lua', 'html', 'cssls', 'tsserver', 'emmet_ls' },
-  automatic_installation = true
+  automatic_installation = false
 })
 local nvim_lsp = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
