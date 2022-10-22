@@ -10,6 +10,7 @@ o.encoding = "utf-8"
 o.expandtab = true
 o.shiftwidth = 2
 o.number = true
+o.relativenumber = false
 o.termguicolors = true
 o.cursorline = true
 o.laststatus = 3
@@ -67,8 +68,8 @@ end
 ---------mappings
 
 --change <leader> to 'space'. Please do not make mappings with <leader> in insert mode
-vim.g.mapleader = " "
-vim.g.maplocalheader = " "
+g.mapleader = " "
+g.maplocalheader = " "
 
 --set mapping
 local map = vim.keymap.set
@@ -88,5 +89,7 @@ map('n', '<leader>s', ':so<CR>')
 ---------To another tab
 
 --Bufferlines
-map('n', '<C-Right>', ':BufferLineCycleNext<CR>')
-map('n', '<C-Left>', ':BufferLineCyclePrev<CR>')
+map('n', '<C-l>', ':BufferLineCycleNext<CR>')
+map('n', '<C-h>', ':BufferLineCyclePrev<CR>')
+map('n', '<leader>p', ':BufferLinePick<CR>')
+map('n', '<leader>y', ':BufferLinePickClose<CR>')
