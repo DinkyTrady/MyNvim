@@ -1,0 +1,2 @@
+--autocomments
+require('Comment').setup()
