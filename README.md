@@ -7,6 +7,10 @@ Thanks for vist my repository and intrested to use my neovim setup.
   - Force quit (ignore change file before saved) use 'fq'
   - To save and quit use 'wq'
   - Reset neovim (not quit neovim and open it) use 'space + s'
+  - To next tabs use 'Ctrl + l'
+  - To previous tabs use 'Ctrl + h'
+  - To pick tabs use 'Space + p'
+  - To pick close tabs use 'Space + y'
 >For another information please visit **[wiki](https://github.com/DinkyTrady/MyNvim/wiki).**
 ## ⚠️ Requirements
 - Up to Date package 📦
