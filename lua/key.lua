@@ -10,7 +10,7 @@ o.encoding = "utf-8"
 o.expandtab = true
 o.shiftwidth = 2
 o.number = true
-o.relativenumber = false
+o.relativenumber = true
 o.termguicolors = true
 o.cursorline = true
 o.laststatus = 3
@@ -30,7 +30,7 @@ o.splitbelow = true
 o.splitright = true
 o.timeoutlen = 400
 o.updatetime = 250
-o.whichwrap:append "<>[]hl"
+-- o.whichwrap:append "<>[]hl"
 
 --Disable defaults neovim plugins
 local default_plugins = {
@@ -77,8 +77,8 @@ local map = vim.keymap.set
 --open nvim-tree with 'space + t'
 map('n', '<leader>t', ':NvimTreeToggle<CR>')
 
---For save click 'space + z', save and quit click 'wq', quit neovim click 'space + q', to force quit click 'fq' in normal mode
-map('n', '<leader>z', ':w<CR>')
+--For save click 'space + w', save and quit click 'wq', quit neovim click 'space + q', to force quit click 'fq' in normal mode
+map('n', '<leader>w', ':w<CR>')
 map('n', 'wq', ':wq<CR>')
 map('n', '<leader>q', ':q<CR>')
 map('n', 'fq', ':q!<CR>')

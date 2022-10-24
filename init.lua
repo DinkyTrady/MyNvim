@@ -19,6 +19,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'numToStr/Comment.nvim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug('iamcco/markdown-preview.nvim', { ['do']= 'cd app && yarn install' })
   --ui
   Plug('akinsho/bufferline.nvim', {  tag = 'v3.*' })
   Plug 'kyazdani42/nvim-web-devicons'
