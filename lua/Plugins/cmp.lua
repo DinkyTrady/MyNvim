@@ -5,7 +5,6 @@ end
 
 local cmp = require'cmp'
 local luasnip = require'luasnip'
-require("luasnip.loaders.from_vscode").lazy_load()
 local lspkind = require('lspkind')
 local kind_icons = {
   Text = "",
@@ -34,6 +33,7 @@ local kind_icons = {
   Operator = "",
   TypeParameter = ""
 }
+
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
@@ -54,7 +54,7 @@ cmp.setup({
       vim_item.menu = ({
         buffer = "[TXT]",
         nvim_lsp = "[LSP]",
-        luasnip = "[LS]",
+        luasnip = "[SNIP]",
         nvim_lua = "[Lua]",
         latex_symbols = "[LTX]",
       })[entry.source.name]
@@ -116,12 +116,12 @@ cmp.setup({
     end, { "i", "s" }),
   },
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
+    { name = 'nvim_lsp', priority = 30 },
     --{ name = 'vsnip' }, -- For vsnip users.
-    { name = 'luasnip' }, -- For luasnip users.
+    { name = 'luasnip', priority = 40 }, -- For luasnip users.
     -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.                                                                        }, {
-    { name = 'buffer' },
+    { name = 'buffer', priority = 30 },
   })
 })
 

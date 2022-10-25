@@ -10,7 +10,6 @@ o.encoding = "utf-8"
 o.expandtab = true
 o.shiftwidth = 2
 o.number = true
-o.relativenumber = true
 o.termguicolors = true
 o.cursorline = true
 o.laststatus = 3
