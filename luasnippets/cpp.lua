@@ -5,7 +5,7 @@ local start = [[
 using namespace std;
 
 int main() {
-  $1
+  $0
   return 0;
 }
 ]]
@@ -25,7 +25,6 @@ return {
   p({
     trig = 'start',
     dscr = 'automatic c++ default',
-    priority = 2000
     },start),
   p({
     trig = 'cout',
@@ -33,6 +32,6 @@ return {
     },cout),
   p({
     trig = 'cin',
-    dscr = 'write cin without str::'
+    dscr = 'write cin without std::'
   }, cin),
 }
