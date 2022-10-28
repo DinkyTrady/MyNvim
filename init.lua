@@ -17,7 +17,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug 'onsails/lspkind-nvim'
   --Make your experience better
   Plug 'numToStr/Comment.nvim'
-  Plug 'jiangmiao/auto-pairs'
+  Plug 'windwp/nvim-autopairs'
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug('iamcco/markdown-preview.nvim', { ['do']= 'cd app && yarn install' })
   --ui
@@ -29,6 +29,10 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
   Plug('nvim-treesitter/nvim-treesitter', {['do']= ':TSUpdate'})
   --colorscheme
   Plug('folke/tokyonight.nvim', { branch = 'main' })
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+  Plug 'windwp/nvim-ts-autotag'
+  Plug 'p00f/nvim-ts-rainbow'
+  Plug 'nvim-treesitter/nvim-treesitter-context'
 vim.call('plug#end')
 --require
 require('plug-setup')
